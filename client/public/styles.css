@@ -1,0 +1,137 @@
+/* client/public/styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav ul li {
+  margin-right: 20px;
+}
+
+.nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Product List */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Product Detail */
+.product-detail {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Cart */
+.cart-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Checkout */
+.checkout-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Order History */
+.order-history-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Chat */
+.chat-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-top-left-radius: 5px;
+}
+
+.chat-messages {
+  max-height: 200px;
+  overflow-y: scroll;
+  margin-bottom: 10px;
+}
+
+.chat-message {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+  .product-list {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .chat-container {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+  }
+}
